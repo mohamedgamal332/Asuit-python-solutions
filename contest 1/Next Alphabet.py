@@ -1,0 +1,1 @@
+print(chr((ord(input()) - 96) % 26 + 97))
