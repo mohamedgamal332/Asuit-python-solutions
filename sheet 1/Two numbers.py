@@ -1,18 +1,11 @@
 import math
-y = input().split(" ")
-div = int(y[0]) / int(y[1])
+a, b = [int(x) for x in input().split(" ")]
+div = (a / b)
 
-print(f"floor {y[0]} / {y[1]} = {math.floor(div)}")
-print(f"ceil {y[0]} / {y[1]} = {math.ceil(div)}")
+print(f"floor {a} / {b} = {math.floor(div)}")
+print(f"ceil {a} / {b} = {math.ceil(div)}")
 frac = math.ceil(div) - div
-if frac == 0.5:
-    print(f"round {y[0]} / {y[1]} = {math.ceil(div)+1}")
+if frac > 0.5:
+    print(f"round {a} / {b} = {math.floor(div)}")
 else:
-    print(f"round {y[0]} / {y[1]} = {round(div)}")
-
-
-"""
-floor 10 / 4 = 2
-ceil 10 / 4 = 3
-round 10 / 4 = 3
-"""
+    print(f"round {a} / {b} = {math.ceil(div)}")
