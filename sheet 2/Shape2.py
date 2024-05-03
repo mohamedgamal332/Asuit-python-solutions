@@ -7,8 +7,7 @@ tot = ""
 while cnc:
     tot += cnc + sec
     print(tot)
-    for i in range(x):
-        cnc = " " * i
+    cnc = " " * (x - 1)
     sec += "**"
     tot = ""
     x -= 1
