@@ -1,6 +1,6 @@
 x = int(input())
 
-row = int((x - (x % 4)) / 4) 
+row = ((x - (x % 4)) // 4) 
 
 
 if (row % 2 == 0):
