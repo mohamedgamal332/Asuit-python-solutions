@@ -1,0 +1,15 @@
+a, b = [int(i) for i in input().split(" ")]
+
+
+def swap_row(arr):
+    lst = [0] * b
+    for i in range(b):
+        lst[i] = arr[(b -1) -i]
+    return lst
+
+mat = []
+for i in range(a):
+    mat.append(swap_row([int(i) for i in input().split(" ")]))
+
+for i in range(a):
+    print(*mat[i], sep=" ")
